@@ -19,3 +19,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+// page transition 
+
+const swup = new Swup();
