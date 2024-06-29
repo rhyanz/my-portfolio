@@ -23,4 +23,4 @@ function closeMenu() {
 
 // page transition 
 
-const swup = new Swup();
+// const swup = new Swup();
