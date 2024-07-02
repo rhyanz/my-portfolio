@@ -8,7 +8,7 @@
     
 }
 
-
+/* css to reset all the designs */
 
 * {
     margin: 0;
@@ -18,7 +18,7 @@
 html {
     scroll-behavior: smooth;
     font-family: var(--font);
-    color: var(--textColor!important);
+    
 }
 
 
@@ -30,9 +30,7 @@ a {
     text-decoration: none;
 }
 
-/* css to reset all the designs */
-
-/* add styles on elements */
+/* navigation*/
 
 .header {
     background-color: transparent;
@@ -68,6 +66,7 @@ a {
 
 .nav-item {
     margin-left: 3rem;
+    color: var(--textColor);
 }
 
 
@@ -86,10 +85,12 @@ a {
 }
 
 .nav-logo img {
-    width: 5rem;
+    width: 10rem;
     margin-left: 4rem
 }
 
+
+/* logo animation */
 .rotation {
   -webkit-animation: rotation 10s linear infinite;
   -moz-animation: rotation 10s linear infinite;
@@ -108,21 +109,65 @@ a {
 }
 
 
+
+/*main section - body */
+
+body {
+    background-image: url(../images/gradient.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info {
+    margin-top: 3rem;
+}
+.container {
+    width: 90%;
+}
+.orange {
+    color: orange;
+}
+
+
+
+/* page transition animation */
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+.spacer {
+    height: 200vh;
+    background-color: red;
+}
+
+
+/* mobile design */
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
+        margin-left: 5%;
         left: -100%;
-        top: 5rem;
+        top: 6rem;
         flex-direction: column;
-        background-color: #222;
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.4px);
+        -webkit-backdrop-filter: blur(4.4px);
+        border: 1px solid rgba(255, 255, 255, 0.43);
     }
-
+    .nav-logo img{
+        width: 5rem;
+    }
     .nav-link {
         color: #fff;
     }
@@ -154,24 +199,4 @@ a {
 
 }
 
-/* add styles on elements */
 
-/*main section*/
-
-.main {
-    background-image: url(../images/gradient.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-
-/* page transition animation */
-
-.transition-fade {
-    opacity: 1;
-    transition: 500ms;
-}
-html.is-animating .transition-fade {
-    opacity: 0;
-}

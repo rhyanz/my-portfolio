@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andrian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
@@ -13,46 +16,59 @@
 
    
    
-   <section class="main">
-      
-      
-      <header class="header">
-    <nav class="navbar">
-        <a href="#" class="nav-logo"><img class="rotation" src="images/wht-logo.png"></a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="project.html" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-</header>
-<div class="container transition-fade" id="swup">
+<section class="main">
 
-<h1>This is the home page</h1>
 
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, rem labore alias eligendi quisquam reprehenderit rerum voluptates sit illum. Eligendi recusandae adipisci obcaecati porro autem repudiandae at eius, culpa temporibus dicta consequatur iste totam laudantium necessitatibus vel facere provident cupiditate, maxime. Suscipit impedit ea porro rerum consequuntur sit ut facilis ullam, perspiciatis amet praesentium, ipsum perferendis tempore dolores, quidem, itaque? Molestiae explicabo doloremque labore laudantium consequatur iusto cupiditate cumque eum nisi tempore excepturi repellat dolorum, recusandae est quod incidunt ad corporis veritatis vel necessitatibus amet. Repellat, earum deleniti minima vero suscipit ullam error nam animi nulla, dolorem, quod possimus quaerat.</p>
-    
-    
-    
-    
-    </div>
-  
-    </section>
-    
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img class="rotation" src="images/wht-logo.png"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+</section>
+
+<div class="container transition-fade info" id="swup">
+
+    <h1>This is the home page</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, rem labore alias eligendi quisquam
+        reprehenderit rerum voluptates sit illum. Eligendi recusandae adipisci obcaecati porro autem repudiandae at
+        eius, culpa temporibus dicta consequatur iste totam laudantium necessitatibus vel facere provident cupiditate,
+        maxime. Suscipit impedit ea porro rerum consequuntur sit ut facilis ullam, perspiciatis amet praesentium, ipsum
+        perferendis tempore dolores, quidem, itaque? Molestiae explicabo doloremque labore laudantium consequatur iusto
+        cupiditate cumque eum nisi tempore excepturi repellat dolorum, recusandae est quod incidunt ad corporis
+        veritatis vel necessitatibus amet. Repellat, earum deleniti minima vero suscipit ullam error nam animi nulla,
+        dolorem, quod possimus quaerat.</p>
+
+        <div id="scramble"></div><div id="newClass"></div><div id="scramble2"></div>
+        
+</div>
+
+
+
+<div class="spacer"></div>
+
+
     
     
     
@@ -63,5 +79,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swup@4"></script>
 <script src="js/main.js"></script>
+<script src="/js/sramble.js"></script>
   </body>
 </html>
